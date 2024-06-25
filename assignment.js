@@ -44,4 +44,4 @@ console.log(countOfAgeUnder5);
 console.log(countOfAgeBetween5And12);
 console.log(countOfAgeBetween13And64);
 console.log(countOfAge65AndAbove);
-//let travellersAges = [23,3,1,45,78,90,34,32,56,75,23];
+//let travellersAges = [23,3,1,45,78,90,34,32,56,75,23]; 
