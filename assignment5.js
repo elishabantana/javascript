@@ -4,7 +4,7 @@ let studentGrades = {
 };
 
 //to add a new student with their grades
-function addGrade(studentName, grades) {
+let addGrade=(studentName, grades)=> {
   try {
     studentGrades[studentName] = grades;
   } catch (error) {
@@ -21,7 +21,7 @@ addGrade("Kasule Drrick", [40, 56, 30, 20])
 
 
 //calculates the average grade for a specific learner
-function calculateAverageGrade(studentName) {
+let calculateAverageGrade=(studentName)=> {
   try {
     let total = 0;
     let average = 0;
@@ -38,7 +38,7 @@ function calculateAverageGrade(studentName) {
 calculateAverageGrade("Sseruyombya Richard");
 
 //find and display a specific student's name
-function findStudentGrades(studentName) {
+let findStudentGrades=(studentName) =>{
   try {
     console.log(`The grades of ${studentName} are ${studentGrades[studentName]}`);
 
@@ -49,7 +49,7 @@ function findStudentGrades(studentName) {
 findStudentGrades("Agnes Nakimuli");
 
 //list all students and their grades
-function listAllStudents() {
+let listAllStudents=() =>{
   try {
     for (let [theirName, theirGrades] of Object.entries(studentGrades)) {
       console.log(`${theirName}: ${theirGrades}`);
@@ -63,7 +63,7 @@ function listAllStudents() {
 listAllStudents();
 
 //find best student based on total
-function findOverallBestStudent() {
+let findOverallBestStudent=() =>{
   try {
     let personWithMaximum = null;
     let total = 0;
@@ -91,7 +91,7 @@ function findOverallBestStudent() {
 findOverallBestStudent();
 
 //sort students starting with the one with highest average to the least
-function sortAccordingToAverage() {
+let sortAccordingToAverage=()=> {
   try {
     let mean = 0;
     let sum = 0;
